@@ -1,0 +1,31 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f7f7f7 ;
+}
+.content {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 1rem; 
+    /*1 rem é uma medida relativa, ex: 16px é fixo, se eu quiser mais maleavel, por isso eu uso o rem, pq ele segue o borwser da pessoa, se a fonte for maior o expassamento vai ser menor, se a fonte for menor o espaçamento vai ser menor*/
+}
+
+/*media query é um conjunto de css que vai ser aplicado de acordo com o tamanho da tela*/
+@media screen and (max-width: 992px) {
+    .content{
+        max-width: 992px;
+        margin: 0 auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
+
+.content h1{
+    margin: 0;
+}
+
+

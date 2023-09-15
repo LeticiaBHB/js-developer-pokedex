@@ -4,8 +4,14 @@
 }
 
 body{
-    background-color: #f7f7f7 ;
+    transition: background-color 0.5s ease;
 }
+
+.container {
+    text-align: center; /* Centralize o texto horizontalmente dentro do container */
+    
+}
+
 .content {
     width: 100vw;
     height: 100vh;

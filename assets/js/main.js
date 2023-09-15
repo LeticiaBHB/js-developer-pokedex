@@ -100,3 +100,30 @@ function sortPokemon() {
 
 // Carregar os primeiros Pokémon ao carregar a página
 loadPokemonItems();
+
+
+/////BACKGROUNDCOLOR/////
+// Função para alterar a cor de fundo aleatoriamente
+// Função para gerar uma cor de fundo aleatória
+function getRandomBackgroundColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+// Função para alterar a cor de fundo aleatoriamente
+function changeBackgroundColor() {
+    const randomColor = getRandomBackgroundColor();
+    document.body.style.backgroundColor = randomColor;
+}
+
+// Adicione um evento de rolagem à página para chamar a função de mudança de cor
+window.addEventListener('scroll', changeBackgroundColor);
+
+function changeBackgroundColor() {
+    const randomColor = getRandomBackgroundColor();
+    document.body.style.backgroundColor = randomColor;
+}
